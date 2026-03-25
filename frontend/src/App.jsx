@@ -17,7 +17,7 @@ function NavBar() {
             </linearGradient>
           </defs>
         </svg>
-        VideoGallery
+        Sanjeev's Video Gallery
       </span>
       <NavLink to="/" end className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
         Gallery

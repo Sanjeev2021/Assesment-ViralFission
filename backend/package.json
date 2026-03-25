@@ -1,7 +1,7 @@
 {
   "name": "thumbnail-gallery-backend",
   "version": "1.0.0",
-  "description": "Backend for Thumbnail Generator & Video Gallery",
+  "description": "Backend for Sanjeev's Video Gallery",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",

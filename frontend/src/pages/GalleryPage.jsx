@@ -68,7 +68,7 @@ export default function GalleryPage() {
       {/* Header */}
       <div className="page-header" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
         <div>
-          <h1 className="page-title">Video Gallery</h1>
+          <h1 className="page-title">Sanjeev's Video Gallery</h1>
           {!loading && (
             <p className="page-subtitle">
               {hasFilter

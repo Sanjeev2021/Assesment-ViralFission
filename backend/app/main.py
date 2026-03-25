@@ -7,7 +7,7 @@ from fastapi.staticfiles import StaticFiles
 
 from app.config import UPLOAD_DIR, THUMBNAIL_DIR
 from app.database import engine
-from app import models  # noqa: F401 — ensure models are registered
+from app import models  
 from app.routes.videos import router as video_router
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -21,7 +21,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Thumbnail Generator & Video Gallery API",
+    title="Sanjeev's Video Gallery API",
     version="1.0.0",
     lifespan=lifespan,
 )

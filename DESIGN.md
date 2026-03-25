@@ -1,4 +1,4 @@
-# Design Note — Thumbnail Generator & Video Gallery
+# Design Note — Sanjeev's Video Gallery
 
 ## Overall Architecture
 
