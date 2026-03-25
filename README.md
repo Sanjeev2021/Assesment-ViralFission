@@ -1,4 +1,4 @@
-# Thumbnail Generator & Video Gallery
+# Sanjeev's Video Gallery
 
 A full-stack web app for uploading videos, generating/selecting thumbnails, and browsing a searchable gallery.
 
@@ -108,6 +108,37 @@ THUMBNAIL_DIR   # where thumbnail JPEGs are saved
 DATABASE_URL    # SQLite path (default: backend/gallery.db)
 THUMBNAIL_COUNT # thumbnails generated per video (default: 4)
 ```
+
+---
+## (Optional) Reset the SQLite database with `sqlite3`
+
+This project stores metadata in `backend/gallery.db` (SQLite). If you want to clear all stored videos and thumbnails:
+
+1. Check if `sqlite3` is available:
+```powershell
+sqlite3 -version
+```
+
+2. Open the database (use your project path):
+```powershell
+sqlite3 "D:\Assesment\ViralFission-Assesment\backend\gallery.db"
+```
+
+3. At the `sqlite>` prompt, type these commands (one by one):
+
+`BEGIN TRANSACTION;`
+
+`DELETE FROM thumbnails;`
+
+`DELETE FROM videos;`
+
+`COMMIT;`
+
+4. Exit:
+
+`.quit`
+
+After clearing the DB, refresh/reload the app (the backend recreates tables automatically on startup).
 
 ---
 
